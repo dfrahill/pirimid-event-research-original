@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="504" height="295" preserveAspectRatio="xMinYMin meet" viewBox="0 0 504 295" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="504" height="295"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-295)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="224" width="144" height="64" rx="5" ry="5" style="stroke: rgb(84%,88%,89%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(92%,94%,95%); fill-rule: evenodd;"/>
+			<text x="51.498000000000005" y="272" style="font-family: Helvetica-Bold; font-size: 9px;fill: rgb(0%,17%,24%); stroke:none;" transform="translate(0,544) scale(1,-1)">Company</text>
+			<text x="43.995999999999995" y="257" style="font-family: Helvetica; font-size: 8px;fill: rgb(35%,43%,48%); stroke:none;" transform="translate(0,514) scale(1,-1)">MachineMetrics</text>
+			<text x="42.436" y="246" style="font-family: Helvetica; font-size: 8px;fill: rgb(35%,43%,48%); stroke:none;" transform="translate(0,492) scale(1,-1)">Company record</text>
+			<rect x="180" y="224" width="144" height="64" rx="5" ry="5" style="stroke: rgb(84%,88%,89%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(92%,94%,95%); fill-rule: evenodd;"/>
+			<text x="236.745" y="272" style="font-family: Helvetica-Bold; font-size: 9px;fill: rgb(0%,17%,24%); stroke:none;" transform="translate(0,544) scale(1,-1)">Person</text>
+			<text x="219.992" y="257" style="font-family: Helvetica; font-size: 8px;fill: rgb(35%,43%,48%); stroke:none;" transform="translate(0,514) scale(1,-1)">Rutherford Wilson</text>
+			<text x="214.876" y="246" style="font-family: Helvetica; font-size: 8px;fill: rgb(35%,43%,48%); stroke:none;" transform="translate(0,492) scale(1,-1)">Chief Product Officer</text>
+			<rect x="360" y="224" width="144" height="64" rx="5" ry="5" style="stroke: rgb(84%,88%,89%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(92%,94%,95%); fill-rule: evenodd;"/>
+			<text x="403.7445" y="272" style="font-family: Helvetica-Bold; font-size: 9px;fill: rgb(0%,17%,24%); stroke:none;" transform="translate(0,544) scale(1,-1)">Event edition</text>
+			<text x="403.324" y="257" style="font-family: Helvetica; font-size: 8px;fill: rgb(35%,43%,48%); stroke:none;" transform="translate(0,514) scale(1,-1)">FABTECH 2026</text>
+			<text x="413.1" y="246" style="font-family: Helvetica; font-size: 8px;fill: rgb(35%,43%,48%); stroke:none;" transform="translate(0,492) scale(1,-1)">Las Vegas</text>
+			<rect x="0" y="104" width="144" height="64" rx="5" ry="5" style="stroke: rgb(84%,88%,89%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(92%,94%,95%); fill-rule: evenodd;"/>
+			<text x="40.995" y="152" style="font-family: Helvetica-Bold; font-size: 9px;fill: rgb(0%,17%,24%); stroke:none;" transform="translate(0,304) scale(1,-1)">Outreach draft</text>
+			<text x="34.647999999999996" y="137" style="font-family: Helvetica; font-size: 8px;fill: rgb(35%,43%,48%); stroke:none;" transform="translate(0,274) scale(1,-1)">Topic-based opening</text>
+			<text x="38.428" y="126" style="font-family: Helvetica; font-size: 8px;fill: rgb(35%,43%,48%); stroke:none;" transform="translate(0,252) scale(1,-1)">Draft only; not sent</text>
+			<rect x="180" y="104" width="144" height="64" rx="5" ry="5" style="stroke: rgb(84%,88%,89%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(0%,17%,24%); fill-rule: evenodd;"/>
+			<text x="224.74349999999998" y="152" style="font-family: Helvetica-Bold; font-size: 9px;fill: rgb(100%,100%,100%); stroke:none;" transform="translate(0,304) scale(1,-1)">Participation</text>
+			<text x="214.096" y="137" style="font-family: Helvetica; font-size: 8px;fill: rgb(100%,100%,100%); stroke:none;" transform="translate(0,274) scale(1,-1)">Person + session IDs</text>
+			<text x="213.54" y="126" style="font-family: Helvetica; font-size: 8px;fill: rgb(100%,100%,100%); stroke:none;" transform="translate(0,252) scale(1,-1)">Relationship: speaker</text>
+			<rect x="360" y="104" width="144" height="64" rx="5" ry="5" style="stroke: rgb(84%,88%,89%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(92%,94%,95%); fill-rule: evenodd;"/>
+			<text x="414.7425" y="152" style="font-family: Helvetica-Bold; font-size: 9px;fill: rgb(0%,17%,24%); stroke:none;" transform="translate(0,304) scale(1,-1)">Session</text>
+			<text x="422.884" y="137" style="font-family: Helvetica; font-size: 8px;fill: rgb(35%,43%,48%); stroke:none;" transform="translate(0,274) scale(1,-1)">F055</text>
+			<text x="392.876" y="126" style="font-family: Helvetica; font-size: 8px;fill: rgb(35%,43%,48%); stroke:none;" transform="translate(0,252) scale(1,-1)">Execution That Works</text>
+			<rect x="180" y="0" width="144" height="60" rx="5" ry="5" style="stroke: rgb(84%,88%,89%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(92%,94%,95%); fill-rule: evenodd;"/>
+			<text x="216.23399999999998" y="44" style="font-family: Helvetica-Bold; font-size: 9px;fill: rgb(0%,17%,24%); stroke:none;" transform="translate(0,88) scale(1,-1)">Source evidence</text>
+			<text x="207.088" y="29" style="font-family: Helvetica; font-size: 8px;fill: rgb(35%,43%,48%); stroke:none;" transform="translate(0,58) scale(1,-1)">Organizer page snapshot</text>
+			<text x="214.208" y="18" style="font-family: Helvetica; font-size: 8px;fill: rgb(35%,43%,48%); stroke:none;" transform="translate(0,36) scale(1,-1)">URL + time + excerpt</text>
+			<path d="M 180,255 L 144,255 Z" style="stroke: rgb(0%,17%,24%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="144 255, 148.3879 252.6029, 148.3879 257.3971" style="stroke: rgb(0%,17%,24%); stroke-linecap: butt; stroke-width: 1; fill: rgb(0%,17%,24%); fill-rule: evenodd;"/>
+			<text x="147.804" y="268" style="font-family: Helvetica; font-size: 7px;fill: rgb(35%,43%,48%); stroke:none;" transform="translate(0,536) scale(1,-1)">works for</text>
+			<path d="M 252,168 L 252,224 Z" style="stroke: rgb(0%,17%,24%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="252 224, 249.6029 219.6121, 254.3971 219.6121" style="stroke: rgb(0%,17%,24%); stroke-linecap: butt; stroke-width: 1; fill: rgb(0%,17%,24%); fill-rule: evenodd;"/>
+			<text x="263.189" y="191" style="font-family: Helvetica; font-size: 7px;fill: rgb(35%,43%,48%); stroke:none;" transform="translate(0,382) scale(1,-1)">identifies</text>
+			<path d="M 324,136 L 360,136 Z" style="stroke: rgb(0%,17%,24%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="360 136, 355.6121 138.3971, 355.6121 133.6029" style="stroke: rgb(0%,17%,24%); stroke-linecap: butt; stroke-width: 1; fill: rgb(0%,17%,24%); fill-rule: evenodd;"/>
+			<text x="335.0" y="149" style="font-family: Helvetica; font-size: 7px;fill: rgb(35%,43%,48%); stroke:none;" transform="translate(0,298) scale(1,-1)">links</text>
+			<path d="M 432,168 L 432,224 Z" style="stroke: rgb(0%,17%,24%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="432 224, 429.6029 219.6121, 434.3971 219.6121" style="stroke: rgb(0%,17%,24%); stroke-linecap: butt; stroke-width: 1; fill: rgb(0%,17%,24%); fill-rule: evenodd;"/>
+			<text x="447.0775" y="191" style="font-family: Helvetica; font-size: 7px;fill: rgb(35%,43%,48%); stroke:none;" transform="translate(0,382) scale(1,-1)">part of</text>
+			<path d="M 252,60 L 252,104 Z" style="stroke: rgb(0%,17%,24%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="252 104, 249.6029 99.61209, 254.3971 99.61209" style="stroke: rgb(0%,17%,24%); stroke-linecap: butt; stroke-width: 1; fill: rgb(0%,17%,24%); fill-rule: evenodd;"/>
+			<text x="267.5775" y="81" style="font-family: Helvetica; font-size: 7px;fill: rgb(35%,43%,48%); stroke:none;" transform="translate(0,162) scale(1,-1)">supports</text>
+			<path d="M 180,239 L 72,168 Z" style="stroke: rgb(0%,17%,24%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="72 168, 76.98338 168.4074, 74.34974 172.4135" style="stroke: rgb(0%,17%,24%); stroke-linecap: butt; stroke-width: 1; fill: rgb(0%,17%,24%); fill-rule: evenodd;"/>
+			<text x="98.939" y="210" style="font-family: Helvetica; font-size: 7px;fill: rgb(35%,43%,48%); stroke:none;" transform="translate(0,420) scale(1,-1)">draft for</text>
+			<text x="10" y="42" style="font-family: Helvetica; font-size: 8px;fill: rgb(35%,43%,48%); stroke:none;" transform="translate(0,84) scale(1,-1)">Vendor fit is an assessment.</text>
+			<text x="10" y="29" style="font-family: Helvetica; font-size: 8px;fill: rgb(35%,43%,48%); stroke:none;" transform="translate(0,58) scale(1,-1)">Speaking is not buying intent.</text>
+		</g>
+	</g>
+</svg>

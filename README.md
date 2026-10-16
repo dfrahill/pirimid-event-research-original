@@ -9,7 +9,7 @@ A private, AISC-branded workspace for finding industrial events in the United St
 
 **Live site:** https://pirimid-event-research.vercel.app
 
-**Start here: [Dan's ownership and setup guide](docs/OWNER_GUIDE.md).**
+**Start here: [Dan's ownership and setup guide](docs/OWNER_GUIDE.md), or [download the PDF](docs/OWNER_GUIDE.pdf).** Includes a proposed Supabase CRM, research-data ontology and diagrams for the next phase. Supabase is not connected in this release.
 
 ## Delivery status
 

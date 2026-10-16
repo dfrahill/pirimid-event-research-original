@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="504" height="290" preserveAspectRatio="xMinYMin meet" viewBox="0 0 504 290" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="504" height="290"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-290)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="220" width="144" height="64" rx="5" ry="5" style="stroke: rgb(84%,88%,89%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(92%,94%,95%); fill-rule: evenodd;"/>
+			<text x="39.987" y="268" style="font-family: Helvetica-Bold; font-size: 9px;fill: rgb(0%,17%,24%); stroke:none;" transform="translate(0,536) scale(1,-1)">Public sources</text>
+			<text x="49.763999999999996" y="253" style="font-family: Helvetica; font-size: 8px;fill: rgb(35%,43%,48%); stroke:none;" transform="translate(0,506) scale(1,-1)">Event pages</text>
+			<text x="46.652" y="242" style="font-family: Helvetica; font-size: 8px;fill: rgb(35%,43%,48%); stroke:none;" transform="translate(0,484) scale(1,-1)">Apify, if added</text>
+			<rect x="180" y="220" width="144" height="64" rx="5" ry="5" style="stroke: rgb(84%,88%,89%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(92%,94%,95%); fill-rule: evenodd;"/>
+			<text x="216.99450000000002" y="268" style="font-family: Helvetica-Bold; font-size: 9px;fill: rgb(0%,17%,24%); stroke:none;" transform="translate(0,536) scale(1,-1)">Collection agent</text>
+			<text x="218.988" y="253" style="font-family: Helvetica; font-size: 8px;fill: rgb(35%,43%,48%); stroke:none;" transform="translate(0,506) scale(1,-1)">Fetch + timestamp</text>
+			<text x="220.432" y="242" style="font-family: Helvetica; font-size: 8px;fill: rgb(35%,43%,48%); stroke:none;" transform="translate(0,484) scale(1,-1)">Keep source URL</text>
+			<rect x="360" y="220" width="144" height="64" rx="5" ry="5" style="stroke: rgb(84%,88%,89%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(92%,94%,95%); fill-rule: evenodd;"/>
+			<text x="393.23699999999997" y="268" style="font-family: Helvetica-Bold; font-size: 9px;fill: rgb(0%,17%,24%); stroke:none;" transform="translate(0,536) scale(1,-1)">Private snapshots</text>
+			<text x="398.868" y="253" style="font-family: Helvetica; font-size: 8px;fill: rgb(35%,43%,48%); stroke:none;" transform="translate(0,506) scale(1,-1)">Supabase Storage</text>
+			<text x="404.76" y="242" style="font-family: Helvetica; font-size: 8px;fill: rgb(35%,43%,48%); stroke:none;" transform="translate(0,484) scale(1,-1)">Content + hash</text>
+			<rect x="360" y="110" width="144" height="64" rx="5" ry="5" style="stroke: rgb(84%,88%,89%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(92%,94%,95%); fill-rule: evenodd;"/>
+			<text x="380.988" y="158" style="font-family: Helvetica-Bold; font-size: 9px;fill: rgb(0%,17%,24%); stroke:none;" transform="translate(0,316) scale(1,-1)">Candidate observations</text>
+			<text x="401.76800000000003" y="143" style="font-family: Helvetica; font-size: 8px;fill: rgb(35%,43%,48%); stroke:none;" transform="translate(0,286) scale(1,-1)">Postgres records</text>
+			<text x="399.212" y="132" style="font-family: Helvetica; font-size: 8px;fill: rgb(35%,43%,48%); stroke:none;" transform="translate(0,264) scale(1,-1)">Claims + evidence</text>
+			<rect x="180" y="110" width="144" height="64" rx="5" ry="5" style="stroke: rgb(84%,88%,89%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(92%,94%,95%); fill-rule: evenodd;"/>
+			<text x="212.733" y="158" style="font-family: Helvetica-Bold; font-size: 9px;fill: rgb(0%,17%,24%); stroke:none;" transform="translate(0,316) scale(1,-1)">Validation / review</text>
+			<text x="223.768" y="143" style="font-family: Helvetica; font-size: 8px;fill: rgb(35%,43%,48%); stroke:none;" transform="translate(0,286) scale(1,-1)">Resolve identity</text>
+			<text x="220.876" y="132" style="font-family: Helvetica; font-size: 8px;fill: rgb(35%,43%,48%); stroke:none;" transform="translate(0,264) scale(1,-1)">Check the source</text>
+			<rect x="0" y="110" width="144" height="64" rx="5" ry="5" style="stroke: rgb(84%,88%,89%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(0%,17%,24%); fill-rule: evenodd;"/>
+			<text x="28.615499999999997" y="158" style="font-family: Helvetica-Bold; font-size: 9px;fill: rgb(100%,100%,100%); stroke:none;" transform="translate(0,316) scale(1,-1)">CRM + relationships</text>
+			<text x="37.54" y="143" style="font-family: Helvetica; font-size: 8px;fill: rgb(100%,100%,100%); stroke:none;" transform="translate(0,286) scale(1,-1)">Companies, people</text>
+			<text x="42.212" y="132" style="font-family: Helvetica; font-size: 8px;fill: rgb(100%,100%,100%); stroke:none;" transform="translate(0,264) scale(1,-1)">Events, activities</text>
+			<rect x="0" y="0" width="144" height="64" rx="5" ry="5" style="stroke: rgb(84%,88%,89%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(92%,94%,95%); fill-rule: evenodd;"/>
+			<text x="24.7365" y="48" style="font-family: Helvetica-Bold; font-size: 9px;fill: rgb(0%,17%,24%); stroke:none;" transform="translate(0,96) scale(1,-1)">Research / draft agent</text>
+			<text x="35.536" y="33" style="font-family: Helvetica; font-size: 8px;fill: rgb(35%,43%,48%); stroke:none;" transform="translate(0,66) scale(1,-1)">Read accepted facts</text>
+			<text x="50.432" y="22" style="font-family: Helvetica; font-size: 8px;fill: rgb(35%,43%,48%); stroke:none;" transform="translate(0,44) scale(1,-1)">Save a draft</text>
+			<rect x="180" y="0" width="144" height="64" rx="5" ry="5" style="stroke: rgb(84%,88%,89%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(92%,94%,95%); fill-rule: evenodd;"/>
+			<text x="217.242" y="48" style="font-family: Helvetica-Bold; font-size: 9px;fill: rgb(0%,17%,24%); stroke:none;" transform="translate(0,96) scale(1,-1)">Human decision</text>
+			<text x="215.54" y="33" style="font-family: Helvetica; font-size: 8px;fill: rgb(35%,43%,48%); stroke:none;" transform="translate(0,66) scale(1,-1)">Review and approve</text>
+			<text x="214.652" y="22" style="font-family: Helvetica; font-size: 8px;fill: rgb(35%,43%,48%); stroke:none;" transform="translate(0,44) scale(1,-1)">Record real outreach</text>
+			<rect x="360" y="0" width="144" height="64" rx="5" ry="5" style="stroke: rgb(84%,88%,89%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(92%,94%,95%); fill-rule: evenodd;"/>
+			<text x="401.9895" y="48" style="font-family: Helvetica-Bold; font-size: 9px;fill: rgb(0%,17%,24%); stroke:none;" transform="translate(0,96) scale(1,-1)">Review queue</text>
+			<text x="397.324" y="33" style="font-family: Helvetica; font-size: 8px;fill: rgb(35%,43%,48%); stroke:none;" transform="translate(0,66) scale(1,-1)">Missing / conflicting</text>
+			<text x="397.324" y="22" style="font-family: Helvetica; font-size: 8px;fill: rgb(35%,43%,48%); stroke:none;" transform="translate(0,44) scale(1,-1)">Preserve prior facts</text>
+			<path d="M 144,252 L 180,252 Z" style="stroke: rgb(0%,17%,24%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="180 252, 175.6121 254.3971, 175.6121 249.6029" style="stroke: rgb(0%,17%,24%); stroke-linecap: butt; stroke-width: 1; fill: rgb(0%,17%,24%); fill-rule: evenodd;"/>
+			<path d="M 324,252 L 360,252 Z" style="stroke: rgb(0%,17%,24%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="360 252, 355.6121 254.3971, 355.6121 249.6029" style="stroke: rgb(0%,17%,24%); stroke-linecap: butt; stroke-width: 1; fill: rgb(0%,17%,24%); fill-rule: evenodd;"/>
+			<path d="M 432,220 L 432,174 Z" style="stroke: rgb(0%,17%,24%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="432 174, 434.3971 178.3879, 429.6029 178.3879" style="stroke: rgb(0%,17%,24%); stroke-linecap: butt; stroke-width: 1; fill: rgb(0%,17%,24%); fill-rule: evenodd;"/>
+			<text x="447.4965" y="194" style="font-family: Helvetica; font-size: 7px;fill: rgb(35%,43%,48%); stroke:none;" transform="translate(0,388) scale(1,-1)">extract</text>
+			<path d="M 360,142 L 324,142 Z" style="stroke: rgb(0%,17%,24%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="324 142, 328.3879 139.6029, 328.3879 144.3971" style="stroke: rgb(0%,17%,24%); stroke-linecap: butt; stroke-width: 1; fill: rgb(0%,17%,24%); fill-rule: evenodd;"/>
+			<path d="M 180,142 L 144,142 Z" style="stroke: rgb(0%,17%,24%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="144 142, 148.3879 139.6029, 148.3879 144.3971" style="stroke: rgb(0%,17%,24%); stroke-linecap: butt; stroke-width: 1; fill: rgb(0%,17%,24%); fill-rule: evenodd;"/>
+			<path d="M 72,110 L 72,64 Z" style="stroke: rgb(0%,17%,24%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="72 64, 74.39713 68.38791, 69.60287 68.38791" style="stroke: rgb(0%,17%,24%); stroke-linecap: butt; stroke-width: 1; fill: rgb(0%,17%,24%); fill-rule: evenodd;"/>
+			<path d="M 144,32 L 180,32 Z" style="stroke: rgb(0%,17%,24%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="180 32, 175.6121 34.39713, 175.6121 29.60287" style="stroke: rgb(0%,17%,24%); stroke-linecap: butt; stroke-width: 1; fill: rgb(0%,17%,24%); fill-rule: evenodd;"/>
+			<path d="M 324,122 L 360,49 Z" style="stroke: rgb(0%,17%,24%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="360 49, 360.2092 53.99562, 355.9093 51.87516" style="stroke: rgb(0%,17%,24%); stroke-linecap: butt; stroke-width: 1; fill: rgb(0%,17%,24%); fill-rule: evenodd;"/>
+			<text x="344.6045" y="90" style="font-family: Helvetica; font-size: 7px;fill: rgb(35%,43%,48%); stroke:none;" transform="translate(0,180) scale(1,-1)">uncertain</text>
+		</g>
+	</g>
+</svg>

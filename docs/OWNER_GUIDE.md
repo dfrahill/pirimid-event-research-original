@@ -21,6 +21,7 @@ Use your own **GitHub account, Vercel project, private Vercel Blob store and Ver
 | Vercel AI Gateway | Access the model and built-in web search | Yes for fresh research |
 | OpenAI, Anthropic or another model account | Optional provider-specific billing through Gateway BYOK | No separate key needed with Gateway billing |
 | Apify | Optional browser-based collection for difficult public event websites | Not integrated in this release |
+| Supabase | Proposed CRM and structured research database; see section 11 | Optional next phase |
 | LinkedIn API | None used; profiles are matched from public evidence | No |
 | Exa API key | Built-in Gateway search uses Exa by default | No separate key needed in this release |
 
@@ -202,6 +203,75 @@ A Vercel rollback changes code, not stored data. Export and back up before schem
 | Research marked interrupted | Run exceeded the app timeout or execution stopped; review provider usage before retrying |
 | Preview cannot save | Preview needs its own storage connection and password variables |
 
+### 11. Add Supabase as the CRM and research foundation
+
+**Proposed next phase. Supabase is not connected to the deployed application.** This section is the implementation plan for expanding it. Creating a Supabase account or adding keys alone does not install a CRM.
+
+The recommendation is to use one Pirimid-owned Supabase project for both CRM records and structured research, with a private Storage bucket for captured source files. Keep the AISC application as the working interface. Supabase is the underlying database and API platform; the contact, pipeline, activity and research screens still need to be built.
+
+An **ontology** is the shared definition of the things the system knows about and how they relate. For this app: a person works for a company, speaks in a session, and that session belongs to a particular event edition. A source snapshot supports a statement about one of those relationships. An outreach draft refers back to the person and evidence. The same person can appear at many events without becoming many separate contacts.
+
+Use ordinary Postgres tables, stable IDs and foreign keys to implement that model first. A separate graph database is unnecessary for this initial scope. Search embeddings can be added later for finding related topics; they do not replace entity identity, source evidence or relationships.
+
+#### Proposed data flow
+
+![Proposed research and CRM data flow](images/research-data-flow.svg)
+
+A scrape creates a source snapshot and candidate observations first. Validation resolves identities and checks evidence before updating CRM records. Missing or conflicting information goes to review rather than silently replacing an approved record. The outreach agent reads accepted facts, writes a draft, and leaves sending to a person.
+
+#### The initial ontology
+
+| Record | Meaning and useful fields |
+| --- | --- |
+| Companies | One organization: stable ID, canonical name, normalized domain, industry and buyer/partner/vendor classification. A domain helps match companies but subsidiaries may need separate IDs. |
+| People and employment | One person plus dated employment relationships: person ID, company ID, role, valid-from/to dates and verified LinkedIn URL when available. Never merge two people on name alone. |
+| Events and editions | An event brand plus each dated edition: series ID, edition ID, country, city, start/end dates and organizer URL. Keep FABTECH 2026 distinct from FABTECH 2027. |
+| Sessions and participation | Session title/topic linked to an event edition; join records link people to sessions as speakers. Exhibitor and attendee relationships are separate evidence-backed records. |
+| Sites and projects | Optional industrial facilities, turnarounds and construction projects linked to owner and contractor companies. A company can own several sites; a project can involve several contractors. |
+| Opportunities and activities | CRM pipeline records: target company/site, owner, stage, next action, due date, notes and human-recorded contact history. Speaking at an event does not create a qualified opportunity automatically. |
+| Sources and snapshots | Canonical source URL, retrieved timestamp, content hash, private storage path, extraction method, fetch status and captured content. Preserve versions rather than overwriting yesterday's page. |
+| Observations and evidence | A candidate statement about a person, company, session or relationship; link to the snapshot and supporting excerpt, observation time, confidence, review status and superseded record. |
+| Research runs and assessments | Input query, provider/model, timestamps, status, provenance and fit assessment. Keep AI-generated relevance judgments separate from observed facts. |
+| Outreach drafts and audit events | Person/session/opportunity links, draft text, approval state and the actor/run responsible for each change. A draft is not a sent message. |
+
+Every record belongs to a workspace. Use uniqueness rules for reliable identities, and indexes on workspace IDs, foreign keys, source hashes and frequently searched dates. Use typed join tables such as employment and session participation, rather than a free-form relationship table that permits impossible links.
+
+#### Example: one speaker, several connected records
+
+![Example speaker ontology](images/ontology-example.svg)
+
+This example uses the reviewed FABTECH sample already included with the app: Rutherford Wilson, MachineMetrics, and session F055. It illustrates the proposed data model, not records already created in Supabase. The organizer evidence supports a speaker/session association and the listed company/role. It does not establish purchase intent. The vendor label is an assessment and should remain distinct from the observed speaker relationship.
+
+A practical agent request would be: “Find upcoming speakers at industrial events whose companies fit our target market, show the evidence, exclude people contacted in the last 30 days, and draft a topic-specific opening.” The database joins people, current employment, session participation, event editions, fit assessments and recorded activities. If contact history has not been recorded or imported, the answer must say that rather than assume nobody has been contacted.
+
+#### Setup and migration sequence
+
+1. Create a Supabase project owned by Pirimid. Select a suitable region and review plan, storage, backup and usage costs before provisioning paid resources. Use a separate development project for schema work.
+2. Implement the table model above as versioned migrations in GitHub. Start with companies, people, employment, event editions, sessions, participation, source snapshots, observations, research runs, activities and outreach drafts. Add sites/projects as those prospecting workflows are introduced.
+3. Create a **private** Storage bucket, for example `research-sources`, for permitted HTML/text/PDF snapshots. Store metadata and content hashes in Postgres, not large page bodies in every CRM row. Define retention and deletion rules for snapshots and personal contact data.
+4. Replace the single shared password with Supabase Auth when individual users or agent identities are needed. Create workspace membership records and role-specific Row Level Security policies. Configure explicit grants as well as RLS on exposed tables, and protect Storage objects with matching access rules. A browser publishable key is safe only with the intended access policies; secret/service-role keys bypass RLS and must never reach the browser or a model prompt. See the official Supabase security references below.
+5. Configure server-side `SUPABASE_URL` and the appropriate server credential in Vercel. If adding browser Auth, use the project URL and publishable key for the browser. These variables are proposed names for the future adapter; the current app does not consume them. Pin the SDK version and keep secrets out of GitHub.
+6. Implement a storage adapter and CRM endpoints alongside `lib/cloud-store.mjs`. Export the existing Blob workspace, map each record into the new entities, preserve original IDs and source links, and deduplicate with a review step. Test in development, compare imported counts and a sample of relationships, then switch the app to Supabase. Keep Blob as a read-only rollback snapshot until the new system is verified; do not maintain two competing writable CRMs.
+7. Add agent tools for specific jobs: `find_contacts`, `record_source_snapshot`, `propose_observation`, `save_outreach_draft` and `record_activity`. Validate inputs and derive workspace access from verified credentials. Give research workers narrowly scoped write permissions; do not give an autonomous prospecting agent unrestricted SQL, database administration or a project-wide service key.
+8. Test denied access as well as allowed access: anonymous requests, another workspace's records, a worker trying to change pipeline stage, duplicate scrapes, a changed speaker role and failed provider runs. Re-running the same source snapshot must not duplicate contacts or activities. Confirm data persists across deployments and that the backup restores correctly before switching production.
+
+Supabase's development MCP connection can help a coding assistant inspect a scoped development project and build migrations. It is separate from the production research agent's tools. Begin with read-only development access where possible; production agents should call the narrow application tools above. Adding MCP does not automatically provide a safe CRM integration.
+
+#### Agent responsibilities and record rules
+
+| Agent/tool role | Permitted work |
+| --- | --- |
+| Discovery | Read accepted CRM facts and public sources; propose events and target companies. |
+| Collection | Capture bounded source content and metadata; append source snapshots and ingestion status. |
+| Extraction | Propose observations and identity matches with evidence; do not silently merge uncertain people. |
+| CRM research | Read relevant entities and activities; save fit assessments and next-action suggestions. |
+| Outreach drafting | Read approved company claims and contact context; save editable drafts. No autonomous sending. |
+| Human review | Resolve conflicting identities, approve important field changes, and record actual outreach or opportunity-stage changes. |
+
+Retain three different timestamps: when a source was fetched, when a fact was observed, and when that fact is believed valid. Keep rejected and superseded observations so an agent can explain a correction. Treat scraped text as source material, never as instructions that can alter agent permissions.
+
+Start with this small, typed ontology and expand only when a new workflow needs another entity or relationship. The goal is a CRM the agents can reason over and update reliably, with evidence behind the records.
+
 ### Official references
 
 - [Vercel GitHub integration](https://vercel.com/docs/git/vercel-for-github)
@@ -214,3 +284,9 @@ A Vercel rollback changes code, not stored data. Export and back up before schem
 - [Apify saved-task API](https://docs.apify.com/api/v2/actor-task-runs-post)
 - [Website Content Crawler](https://apify.com/apify/website-content-crawler)
 - [Eve framework](https://eve.dev/docs)
+
+- [Supabase tables and relationships](https://supabase.com/docs/guides/database/tables)
+- [Supabase Data API security](https://supabase.com/docs/guides/api/securing-your-api)
+- [Supabase Row Level Security](https://supabase.com/docs/guides/database/postgres/row-level-security)
+- [Supabase Storage access control](https://supabase.com/docs/guides/storage/security/access-control)
+- [Supabase development MCP](https://supabase.com/docs/guides/ai-tools/mcp)
