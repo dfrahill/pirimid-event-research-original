@@ -1,0 +1,11 @@
+{
+ "summary":"Reviewed example: FABTECH 2026 speaker research",
+ "coverage":"Three selected entries reviewed from the official speaker directory on October 15, 2026. This is a curated example, not a complete extraction or an agent run. Speaker roles reflect the organizer's listing.",
+ "warnings":["LinkedIn profiles have not been verified.","Relevance assessments are hypotheses, not buying intent."],
+ "events":[],
+ "speakers":[
+  {"name":"Jim Belosic","company":"SendCutSend","role":"Founder and CEO","topic":"Digital modernization of fabrication shops; industry growth and risk","kind":"Buyer","fit":"High","whyReachOut":"Leads a fabrication business and discusses digital operations. Explore whether equipment-level visibility fills a gap; product fit is unconfirmed.","question":"Where does progress visibility still rely on manual updates?","sourceUrl":"https://www.fabtechexpo.com/attend/conference/speakers","evidence":"Organizer identifies him as the company's founder and executive and lists digital-shop and industry-panel sessions.","linkedin":""},
+  {"name":"Nina Berger","company":"Peakboard America","role":"Head of U.S. business","topic":"Using live production data for operational decisions","kind":"Vendor","fit":"Medium","whyReachOut":"Potential technology partner or competitor. Investigate whether sensor-derived progress complements existing dashboards.","question":"How are customers connecting equipment activity to project progress?","sourceUrl":"https://www.fabtechexpo.com/attend/conference/speakers","evidence":"Organizer connects her role with U.S. expansion and sessions about manufacturing data.","linkedin":""},
+  {"name":"John Brown","company":"Acumatica","role":"Senior product manager","topic":"Connecting production schedules with shop-floor execution","kind":"Vendor","fit":"Medium","whyReachOut":"Potential integration conversation about closing gaps between planned and observed work.","question":"Where does feedback from the shop floor arrive too late?","sourceUrl":"https://www.fabtechexpo.com/attend/conference/speakers","evidence":"Organizer describes responsibility for planning and scheduling and lists a related session.","linkedin":""}
+ ]
+}

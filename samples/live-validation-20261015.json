@@ -1,0 +1,215 @@
+{
+  "date": "2026-10-15",
+  "reportedCostUsd": 0.13999091,
+  "temporaryKeyRevoked": true,
+  "jobs": [
+    {
+      "id": "d07772af-2b71-4b4e-8944-45990889cc34",
+      "day": "2026-10-15",
+      "createdAt": "2026-10-16T01:51:38.694Z",
+      "status": "completed",
+      "input": {
+        "mode": "discover",
+        "url": "",
+        "region": "United States",
+        "focus": "Find up to 3 upcoming industrial events with official speaker or agenda evidence for operations, turnaround or fabrication leaders. Prefer refinery/chemical turnarounds and pipe fabrication. Return partial honest results within budget.",
+        "includePast": false
+      },
+      "finishedAt": "2026-10-16T01:52:11.833Z",
+      "result": {
+        "summary": "Found 3 upcoming U.S. industrial events with official organizer evidence relevant to turnaround, refinery operations, or process-plant operations. Speakers are left empty as requested.",
+        "coverage": "Used 4 searches and attempted 5 page reads. Reviewed official organizer pages: Shutdowns Turnarounds Superconference Houston overview and speaker roster; NARTC 2027 agenda; CRU Nitrogen+Syngas USA 2027 homepage; and FMA\u2019s Pipe and Tube Conference page (which returned 403). No third-party corroboration was used. The reviewed official pages support the three listed events; detailed 2027 session-by-session programs and named speakers were not available for NARTC or Nitrogen+Syngas USA in the pages reviewed. Pipe-fabrication coverage is incomplete because the FMA page was blocked and no qualifying official program could be checked within the page budget.",
+        "warnings": [
+          "Pipe-fabrication discovery is incomplete: the FMA Pipe and Tube Conference page returned 403, and no other pipe-fabrication event was included without checked official program or speaker evidence.",
+          "The Shutdowns Turnarounds Superconference page lists speakers, but individual 2027 session topics were not published on the reviewed speaker page.",
+          "NARTC\u2019s reviewed page provides 2027 agenda themes and date/location, but does not expose a named-speaker roster or detailed session-by-session agenda.",
+          "CRU Nitrogen+Syngas USA provides official 2027 dates, location and technical-program focus; its 2027 call for papers is open, so a confirmed 2027 speaker roster and detailed agenda were not available in the reviewed page. This event is a specialty process-plant fit, not specifically a refinery event."
+        ],
+        "events": [
+          {
+            "name": "Shutdowns Turnarounds Superconference Houston",
+            "startDate": "2027-06-03",
+            "endDate": "2027-06-04",
+            "location": "Hilton Houston Post Oak by the Galleria, Houston, Texas, United States",
+            "fit": "High",
+            "why": "Directly focused on shutdown and turnaround planning and execution, with relevance to refinery and chemical owner/operators, contractors, and project/operations leaders.",
+            "participation": "Confirmed speaker",
+            "evidence": "The official speaker page lists Robin Harris as Conference Co-Chair and Site Senior Turnaround Manager, Port Arthur Platform, TotalEnergies; it identifies the event dates as June 3\u20134, 2027.",
+            "sourceUrl": "https://www.americanconference.com/shutdowns-turnarounds-superconference-houston/speakers/",
+            "caveat": "The event overview confirms the Houston venue and turnaround focus. The reviewed speaker roster does not assign individual session topics, so no specific speaker topic is inferred."
+          },
+          {
+            "name": "North American Refining Technology Conference (NARTC) 2027",
+            "startDate": "2027-02-01",
+            "endDate": "2027-02-03",
+            "location": "Houston, Texas, United States",
+            "fit": "High",
+            "why": "The official 2027 agenda page targets refinery process engineers and operations specialists and highlights refining operations, operational decision-making, and technology in daily plant work.",
+            "participation": "Audience fit only",
+            "evidence": "The official agenda page describes \u201c3-days of technical content dedicated to improving refining operations\u201d and gives the event location and dates as Houston, Texas, February 1\u20133, 2027.",
+            "sourceUrl": "https://worldrefiningassociation.com/event-pages/nartc/nartc-agenda/",
+            "caveat": "The page presents agenda themes and a download prompt, but no named 2027 speakers or detailed session-by-session program were available in the reviewed content."
+          },
+          {
+            "name": "CRU Nitrogen+Syngas USA Expoconference 2027",
+            "startDate": "2027-04-06",
+            "endDate": "2027-04-08",
+            "location": "Tulsa, Oklahoma, United States",
+            "fit": "Medium",
+            "why": "A specialized process-plant event whose official 2027 program description targets mechanical, processing, maintenance, and reliability engineers; relevant to chemical and industrial operations, though not specifically refinery turnarounds.",
+            "participation": "Audience fit only",
+            "evidence": "The official 2027 event page confirms Tulsa and April 6\u20138, 2027, and says its technical program is designed for \u201cprocess, mechanical, maintenance and reliability engineers.\u201d",
+            "sourceUrl": "https://events.crugroup.com/nitrogenusa/",
+            "caveat": "The 2027 call for papers is open. The 2027 named-speaker roster and detailed agenda were not published in the reviewed page; prior-edition speaker information was not treated as 2027 participation evidence."
+          }
+        ],
+        "speakers": []
+      },
+      "recoveredFrom": "Existing structured result; no new provider request"
+    },
+    {
+      "id": "4d25661e-a199-438b-9756-901037f055e3",
+      "day": "2026-10-15",
+      "createdAt": "2026-10-16T01:52:33.595Z",
+      "status": "completed",
+      "input": {
+        "mode": "discover",
+        "url": "",
+        "region": "Canada",
+        "focus": "Find up to 3 upcoming Canadian industrial events with official speaker or agenda evidence for refinery/chemical maintenance, turnaround or industrial fabrication leaders. Return partial honest results within budget.",
+        "includePast": false
+      },
+      "result": {
+        "summary": "Found 3 upcoming Canadian industrial events with official organizer evidence: one high-fit turnaround conference and two medium-fit fabrication/manufacturing events. Speakers are left empty as requested.",
+        "coverage": "Used 4 searches and 8 page reads. Reviewed the Shutdowns Turnarounds Superconference organizer overview, speaker list, agenda, and executive-summit page; the official WMTS event page; CWB Group\u2019s official Welding Industry Day listing; and official VMPT 2027 and CSChE 2027 pages. VMPT and CSChE were not selected: the former is mainly a machining-research conference, and the latter\u2019s detailed program was still marked in progress. No full Canadian event census was attempted. No event attendance or participation by Dan Rahill or Pirimid was established.",
+        "warnings": [
+          "CWB Group says the 2027 Welding Industry Day speaker lineup and session topics will be announced when finalized; its current listing confirms the event format, date, and fabrication focus, not specific speakers or sessions.",
+          "WMTS describes manufacturing keynotes, panels, and smart sessions but did not publish specific 2027 speaker names or session topics on the reviewed page.",
+          "The Shutdowns Turnarounds Superconference has pre-conference sessions on November 30, 2026; the listed event dates are the main conference dates, December 1\u20132, 2026. No registrations or third-party contact were made."
+        ],
+        "events": [
+          {
+            "name": "Shutdowns Turnarounds Superconference 2026",
+            "startDate": "2026-12-01",
+            "endDate": "2026-12-02",
+            "location": "Hyatt Regency Calgary, Calgary, Alberta, Canada",
+            "fit": "High",
+            "why": "Direct match for refinery, petrochemical and process-industry turnaround, maintenance, outage, contractor and project-controls audiences. The official agenda includes owner/operator and contractor perspectives, turnaround execution, cost/schedule control, scope, closeout and asset maintenance topics.",
+            "participation": "Confirmed speaker",
+            "evidence": "Official December 1\u20132, 2026 agenda lists Taylor Brookes, Senior Turnaround Specialist, and Quinton Smith, Manager \u2013 Strategic Maintenance & Outages, NorthRiver Midstream, for the turnaround case study.",
+            "sourceUrl": "https://www.canadianinstitute.com/shutdowns-turnarounds-superconference/agenda/",
+            "caveat": "Reviewer correction: participation refers to ICP speakers, not Dan. Named NorthRiver Midstream speakers confirmed on the official agenda. Pre-conference sessions are November 30."
+          },
+          {
+            "name": "Welding Industry Day VIRTUAL 2027",
+            "startDate": "2027-02-10",
+            "endDate": "2027-02-10",
+            "location": "Online (PheedLoop)",
+            "fit": "Medium",
+            "why": "Direct fabrication-sector relevance: the organizer identifies welding, joining and fabrication industries and promises presentations on productivity and innovation. A potential audience for fabrication and project-progress intelligence, but specific use cases and attendees are not yet published.",
+            "participation": "Audience fit only",
+            "evidence": "CWB Group: \u201cfocused on improving productivity and exploring the latest innovations shaping Canada\u2019s welding, joining, and fabrication industries\u201d; event details give February 10, 2027.",
+            "sourceUrl": "https://www.cwbgroup.org/advocacy/conferences/welding-industry-day-virtual-2027",
+            "caveat": "The organizer states that speaker lineup and session topics will be announced later; no named speakers or detailed agenda were available on the reviewed page."
+          },
+          {
+            "name": "Western Manufacturing Technology Show (WMTS) 2027",
+            "startDate": "2027-04-28",
+            "endDate": "2027-04-30",
+            "location": "Edmonton Expo Centre, Edmonton, Alberta, Canada",
+            "fit": "Medium",
+            "why": "Broad manufacturing-technology event with relevance to industrial fabrication and manufacturing leaders. Organizer materials describe manufacturing-industry keynotes, panels, smart sessions and technology exhibits, though no 2027 session evidence specifically addresses process-industry turnaround work.",
+            "participation": "Audience fit only",
+            "evidence": "WMTS describes \u201cInspiring Keynotes and Panels\u201d on \u201cworkforce development, future factory trends, and productivity-enhancing government programs\u201d; the same official page lists April 28\u201330, 2027 at Edmonton Expo Centre.",
+            "sourceUrl": "https://www.wmts.ca/event/about-wmts/",
+            "caveat": "Specific 2027 speakers and session topics were not published on the reviewed official page; fit is based on the event\u2019s manufacturing audience and stated program format."
+          }
+        ],
+        "speakers": []
+      },
+      "finishedAt": "2026-10-16T01:53:10.210Z",
+      "reviewNote": "Participation classification corrected after independent source review on October 15, 2026. Original output retained in canada-trace.json."
+    },
+    {
+      "id": "ab44935d-f207-4188-9acd-e19e11e8d399",
+      "day": "2026-10-15",
+      "createdAt": "2026-10-16T01:53:19.798Z",
+      "status": "completed",
+      "input": {
+        "mode": "speakers",
+        "url": "https://www.fabtechexpo.com/attend/conference/speakers",
+        "region": "United States + Canada",
+        "focus": "Research up to 3 named speakers relevant to industrial fabrication operations or production-progress visibility. Include company, role, actual session topic, eventName, sources, LinkedIn only if corroborated, and a draft with unapproved product/pilot claims bracketed.",
+        "includePast": false
+      },
+      "result": {
+        "summary": "Researched three officially listed speakers for the upcoming FABTECH 2026 edition (October 21\u201323, Las Vegas): Rutherford Wilson, Alex Doerner, and Alexander Klimov. All three are vendor-side speakers, not identified industrial-owner buyers.",
+        "coverage": "Used 3 searches and 5 page-fetch attempts. The official FABTECH speaker directory and conference/session pages were reviewed via official search-index excerpts, but direct fetches of the supplied speaker page, conference page, and three session pages returned 403/JavaScript-cookie blocks. Official search results for FABTECH\u2019s homepage confirmed the 2026 edition dates and Las Vegas Convention Center location. Session pages checked: F055 (Rutherford Wilson), F096 (Alex Doerner), and F052 (Alexander Klimov). Public LinkedIn search results were checked for profile corroboration; Alex Doerner\u2019s profile/company match was not clear enough to include a URL. Results are partial where direct page verification was blocked.",
+        "warnings": [
+          "Speaker names, affiliations, roles, and session titles are based on official FABTECH indexed excerpts because the official pages could not be opened directly; verify against the live agenda before outreach.",
+          "Confirmed speaker means listed by the organizer for the upcoming edition, not that the person has already attended or spoken.",
+          "These speakers are vendor-side; topical fit does not establish purchase intent, budget authority, or technical fit. Outreach drafts retain unapproved outcome, mechanism, and pilot claims as bracketed placeholders."
+        ],
+        "events": [],
+        "speakers": [
+          {
+            "name": "Rutherford Wilson",
+            "company": "MachineMetrics",
+            "role": "Chief Product Officer",
+            "topic": "F055: Execution That Works: AI Guidance and Cost-Effective Inventory Strategies for Real Shops",
+            "kind": "Vendor",
+            "fit": "High",
+            "whyReachOut": "The session is directly about shop-floor execution and real-time intelligence in fabrication and contract manufacturing, making Wilson a strong topical contact for a discussion of production visibility. MachineMetrics is a vendor, so treat this as peer or partnership learning rather than evidence of buyer intent.",
+            "question": "For high-mix shops, what signals best help production teams distinguish actual work progress from machine status alone?",
+            "sourceUrl": "https://www.fabtechexpo.com/sessions/F055/execution-that-works-ai-guidance-and-cost-effective-inventory-strategies-for-real-shops",
+            "evidence": "Official FABTECH listing: \u201cRutherford Wilson\u201d at \u201cMachineMetrics\u201d; bio: \u201cChief Product Officer of MachineMetrics.\u201d Session title: \u201cExecution That Works: AI Guidance and Cost-Effective Inventory Strategies for Real Shops.\u201d Public LinkedIn result matches Rutherford Wilson and Chief Product Officer at MachineMetrics.",
+            "linkedin": "https://www.linkedin.com/in/rutherford",
+            "linkedinEvidenceUrl": "https://www.linkedin.com/in/rutherford",
+            "eventName": "FABTECH 2026",
+            "outreachMessage": "Hey Rutherford, saw you're speaking at FABTECH 2026 about Execution That Works: AI Guidance and Cost-Effective Inventory Strategies for Real Shops. We've found a unique way to [specific outcome] by [how Pirimid does it]. We're currently piloting with [approved customer or customer type]. Would love to get your opinion on it if you're open to it."
+          },
+          {
+            "name": "Alex Doerner",
+            "company": "SigmaNEST",
+            "role": "Product Owner for Profile Cutting and Nesting",
+            "topic": "F096: AI in the Fab Shop: From First Steps to Scalable Strategy",
+            "kind": "Vendor",
+            "fit": "High",
+            "whyReachOut": "The session focuses specifically on AI in fabrication shops, and Doerner\u2019s published role and biography connect his work to how production moves from engineering to the shop floor. This is a relevant operational perspective, though he represents a software vendor rather than a confirmed buyer.",
+            "question": "Where do fabrication teams most often lose visibility between the planned job sequence and what is actually progressing on the shop floor?",
+            "sourceUrl": "https://www.fabtechexpo.com/sessions/F096/ai-in-the-fab-shop-from-first-steps-to-scalable-strategy",
+            "evidence": "Official FABTECH listing identifies \u201cAlex Doerner\u201d with \u201cSigmaNEST\u201d; bio describes him as \u201cthe Product Owner for Profile Cutting and Nesting\u201d and says he works to \u201cimprove how work moves from engineering to the shop floor.\u201d The session is titled \u201cAI in the Fab Shop: From First Steps to Scalable Strategy.\u201d",
+            "linkedin": "",
+            "linkedinEvidenceUrl": "",
+            "eventName": "FABTECH 2026",
+            "outreachMessage": "Hey Alex, saw you're speaking at FABTECH 2026 about AI in the Fab Shop: From First Steps to Scalable Strategy. We've found a unique way to [specific outcome] by [how Pirimid does it]. We're currently piloting with [approved customer or customer type]. Would love to get your opinion on it if you're open to it."
+          },
+          {
+            "name": "Alexander Klimov",
+            "company": "Skody AI",
+            "role": "CEO and Co-Founder",
+            "topic": "F052: Next-Gen Production Scheduling: Turning Static ERP Plans into Agile Shop Floor Action",
+            "kind": "Vendor",
+            "fit": "Medium",
+            "whyReachOut": "The session addresses turning ERP plans into agile shop-floor scheduling, a close adjacent topic to observing production progress and identifying changes to expected completion. Skody AI is a software vendor, so this is an exploratory industry discussion, not evidence of a potential buyer.",
+            "question": "When material, outside-processing, or staffing constraints change a schedule, which floor-level signals are most useful for revising expected completion without adding reporting burden for operators?",
+            "sourceUrl": "https://www.fabtechexpo.com/sessions/F052/next-gen-production-scheduling-turning-static-erp-plans-into-agile-shop-floor-action",
+            "evidence": "Official FABTECH listing names \u201cAlex Klimov\u201d with \u201cSkody AI\u201d; bio describes him as an engineering leader and \u201cCEO and co-founder of Skody AI.\u201d Session title: \u201cNext-Gen Production Scheduling: Turning Static ERP Plans into Agile Shop Floor Action.\u201d Public LinkedIn result matches Alexander Klimov and CEO at SkodyAI.",
+            "linkedin": "https://linkedin.com/in/al-klimov",
+            "linkedinEvidenceUrl": "https://linkedin.com/in/al-klimov",
+            "eventName": "FABTECH 2026",
+            "outreachMessage": "Hey Alexander, saw you're speaking at FABTECH 2026 about Next-Gen Production Scheduling: Turning Static ERP Plans into Agile Shop Floor Action. We've found a unique way to [specific outcome] by [how Pirimid does it]. We're currently piloting with [approved customer or customer type]. Would love to get your opinion on it if you're open to it."
+          }
+        ]
+      },
+      "finishedAt": "2026-10-16T01:54:17.642Z"
+    }
+  ],
+  "notes": [
+    "Three real runs; zero-token billing-rejected attempt not included.",
+    "Calgary participation label reviewer-corrected; original trace retained locally.",
+    "FABTECH direct fetch blocked; official indexed excerpts used.",
+    "All sampled speakers are vendors. Two public profile name/company matches independently checked.",
+    "No deployment."
+  ]
+}

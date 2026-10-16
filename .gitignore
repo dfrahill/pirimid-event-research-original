@@ -8,3 +8,7 @@ node_modules
 dist
 .DS_Store
 *.tsbuildinfo
+
+.local/
+agent/lib/generated/
+work/

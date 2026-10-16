@@ -7,17 +7,21 @@
     "#evals/*": "./evals/*"
   },
   "scripts": {
-    "build": "eve build",
+    "build": "node scripts/embed-ui.mjs && eve build",
     "deploy": "eve deploy",
     "dev": "eve dev",
     "eval": "eve eval",
     "start": "eve start",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "preview": "node preview-server.mjs",
+    "test": "node --test tests/*.test.mjs"
   },
   "dependencies": {
+    "@vercel/blob": "^2.8.2",
     "@vercel/connect": "2.5.2",
     "ai": "^7.0.137",
     "eve": "^0.80.0",
+    "just-bash": "^3.6.0",
     "zod": "4.5.4"
   },
   "devDependencies": {
@@ -26,6 +30,10 @@
   },
   "engines": {
     "node": "24.x"
+  },
+  "overrides": {
+    "guarded-fetch": {
+      "undici": "7.30.1"
+    }
   }
-
 }

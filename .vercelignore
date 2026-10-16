@@ -5,3 +5,11 @@ node_modules
 .output
 .nitro
 dist
+
+.local
+work
+tests
+samples
+.git
+
+public
