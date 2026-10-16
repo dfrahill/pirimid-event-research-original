@@ -1,4 +1,4 @@
-# Pirimid Event Research
+# Pirimid AI Native Event Research Platform
 ## Ownership and setup guide
 
 Prepared for Dan Rahill · October 15, 2026
