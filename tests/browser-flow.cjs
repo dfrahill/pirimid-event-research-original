@@ -59,7 +59,23 @@ const { chromium } = require(
     await p.locator(".event-card").first().waitFor();
     await p.locator(".details").first().click();
     await p.locator("#research-this-event").click();
+    if (await p.locator(".event-card, .person-card").count()) throw Error("Unresearched speaker tab must be empty");
     await p.locator("#run-button").click();
+    await p.locator("[data-tab=discover]").click();
+    await p.locator(".event-card").first().waitFor();
+    await p.waitForFunction(() => !document.querySelector("#run-button").disabled);
+    if (await p.locator(".person-card").count()) throw Error("Background speaker run changed event tab");
+    await p.locator("[data-tab=speakers]").click();
+    await p.locator(".person-card").first().waitFor();
+    await p.locator("[data-tab=discover]").click();
+    await p.locator(".event-card").first().waitFor();
+    if (await p.locator(".person-card").count()) throw Error("Speakers leaked into discovery");
+    await p.locator("[data-tab=speakers]").click();
+    await p.locator(".person-card").first().waitFor();
+    if (await p.locator(".event-card").count()) throw Error("Events leaked into speaker research");
+    await p.reload();
+    await p.locator(".event-card").first().waitFor();
+    await p.locator("[data-tab=speakers]").click();
     await p.locator(".person-card").first().waitFor();
     await p.locator(".details").first().click();
     await p

@@ -19,6 +19,7 @@ const sourceLink = (u, label = "Official source") =>
   `<a class="source-link" href="${esc(safeUrl(u))}" target="_blank" rel="noopener noreferrer">${esc(label)}</a>`;
 let demoMode = false,
   demoData = null;
+const resultsByTab = { discover: null, speakers: null };
 let tab = "discover",
   current = null,
   currentJob = null,
@@ -113,11 +114,12 @@ function setTab(value) {
   render();
 }
 function render() {
+  if (!demoMode && tab !== "saved") current = resultsByTab[tab];
   let rows =
     tab === "saved"
       ? saved
       : current
-        ? current.speakers.length
+        ? tab === "speakers"
           ? current.speakers
           : current.events
         : [];
@@ -265,6 +267,7 @@ async function poll(id) {
       const j = await json("/api/jobs/" + id);
       if (j.status !== "running") {
         if (j.status === "completed") {
+          resultsByTab[j.input.mode] = j.result;
           current = j.result;
           currentJob = j.id;
           isExample = false;
@@ -301,6 +304,7 @@ async function loadHistory() {
       (b) =>
         (b.onclick = () => {
           const j = jobs[Number(b.dataset.index)];
+          resultsByTab[j.input.mode] = j.result;
           current = j.result;
           currentJob = j.id;
           isExample = false;
@@ -314,13 +318,13 @@ async function loadHistory() {
     );
     if (!historyLoaded) {
       historyLoaded = true;
-      const latest = jobs.find((j) => j.status === "completed");
-      if (latest && !current && !demoMode && tab === "discover") {
-        current = latest.result;
-        currentJob = latest.id;
-        isExample = false;
-        setTab(latest.input.mode);
+      for (const mode of ["discover", "speakers"]) {
+        const latest = jobs.find(
+          (j) => j.status === "completed" && j.input.mode === mode,
+        );
+        if (latest && !resultsByTab[mode]) resultsByTab[mode] = latest.result;
       }
+      if (!demoMode) render();
     }
     const running = jobs.find((j) => j.status === "running");
     if (running && !polling) poll(running.id);
@@ -426,6 +430,7 @@ $("#research-form").onsubmit = async (e) => {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(payload),
     });
+    resultsByTab[payload.mode] = null;
     current = null;
     isExample = false;
     render();
