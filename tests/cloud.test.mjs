@@ -153,7 +153,7 @@ test("private blob conditional writes retry conflicts without losing records", a
   const store = new CloudStore({
     read: async () => ({
       statusCode: 200,
-      blob: { etag: String(version) },
+      blob: { etag: 'W/' + String(version) },
       stream: new Blob([JSON.stringify(state)]).stream(),
     }),
     write: async (path, text, opts) => {
